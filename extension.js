@@ -6,6 +6,18 @@ const { getAuth, signInWithPopup, GoogleAuthProvider } = require("firebase/auth"
 const provider = new GoogleAuthProvider();
 provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
 
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB-pVmzrCZBVMPpKcTReM9Xwwcr1olUAwc",
+  authDomain: "vs-plugin.firebaseapp.com",
+  projectId: "vs-plugin",
+  storageBucket: "vs-plugin.firebasestorage.app",
+  messagingSenderId: "238242579636",
+  appId: "1:238242579636:web:13cf84ff4bb0c9c7fb03e1",
+  measurementId: "G-SP1PL2S8HC",
+};
+
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 // auth.languageCode = "it";
